@@ -1,0 +1,87 @@
+.App {
+    background-image: url("/appBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.app_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 1em 2em 1em;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.app_title {
+    font-size: 3.5em;
+    color: white;
+}
+
+.bx-user-plus {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.app_btn {
+    width: 100%;
+    max-width: 150px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3em;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5em 0;
+    border-radius: 0.5em;
+    box-shadow: 0.2em 0.2em 0.4em rgba(231, 223, 223, 0.678);
+    transition: transform 200ms ease;
+    animation: moveUpDown 3s infinite;
+}
+
+.app_btn:hover {
+    filter: brightness(1.1);
+    transform: scale(1.02);
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+.app_noUsers-containt {
+    background-color: transparent;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app_noUsers-img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.app_noUsers {
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: 0.1em 0.1em 0.1em rgba(206, 196, 196, 0.719);
+    color: white;
+}

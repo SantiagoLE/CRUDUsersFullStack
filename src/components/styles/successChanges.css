@@ -1,0 +1,62 @@
+.success_containt {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(1.5px);
+    z-index: 10;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    transition: transform 150ms;
+}
+
+.success_containt-close {
+    transform: scale(0);
+
+}
+
+.success_card {
+    border: 0.05em solid black;
+    background-color: #eff0f1e9;
+    box-shadow: 0.15em 0.15em rgb(37, 25, 25);
+    display: grid;
+    justify-content: center;
+    gap: 1.5em;
+    width: 100%;
+    max-width: 500px;
+    padding: 3em 0;
+    border-radius: 1em;
+
+}
+
+.success_title {
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 0.1em 0.1em 0.1em rgba(26, 24, 24, 0.719);
+
+}
+
+
+.success_icon {
+    max-width: 100px;
+    place-self: center;
+}
+
+.success_icon-animate {
+    animation: rotate_icon 1s linear forwards;
+
+}
+
+
+@keyframes rotate_icon {
+    0% {
+        transform: none;
+    }
+
+    100% {
+        transform: scaleX(-1);
+    }
+}
