@@ -13,6 +13,7 @@ function App() {
   const [successClose, setSuccessClose] = useState(true)
 
   const { users, getAllUsers, createNewUser, deleteUserByID, updateUserByID, userError } = useUserCrud()
+  console.log(users)
 
   useEffect(() => {
     getAllUsers()

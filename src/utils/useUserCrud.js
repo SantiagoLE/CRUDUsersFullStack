@@ -6,7 +6,7 @@ const useUserCrud = () => {
     const [users, setUsers] = useState()
     const [userError, setUserError] = useState(false)
     console.log(users)
-    const url = `https://users-crud-test-qm7c.onrender.com/api/v1/users`
+    const url = import.meta.env.VITE_REACT_APP_URL
 
 
     // GET
