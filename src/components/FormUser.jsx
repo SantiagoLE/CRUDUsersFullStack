@@ -65,7 +65,7 @@ const FormUser = ({ createNewUser, updateInfo, updateUserByID, setUpdateInfo, fo
                 </div>
                 <div className='form_item'>
                     <label className='form_label' htmlFor="birthday">Birthday</label>
-                    <input className='form_input input_date' {...register("birthday", { required: false })} type="text" id='birthday' placeholder={errors.birthday && "Required field"} autoComplete='off' />
+                    <input className='form_input input_date' {...register("birthday", { required: false })} type="date" id='birthday' placeholder={errors.birthday && "Required field"} autoComplete='off' />
                 </div>
                 <button onClick={handleFormCreateAndUpdate} className='form_btn'>{updateInfo ? "Update" : "Create"}</button>
 
